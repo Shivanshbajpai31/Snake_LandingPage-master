@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snakebite Awareness Program</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Snakebite Awareness Program</h1>
+    <p>Educate. Prevent. Save Lives.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#common-snakes">Common Snakes</a>
+    <a href="#prevention">Prevention</a>
+    <a href="#symptoms">Symptoms</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#signup">Sign Up</a>
+    <div class="nav-buttons">
+    </div>
+  </nav>
+    <button id="modeBtn" class="floating-btn">🌙</button>
+
+  
+  <button id="modeBtn" class="floating-btn" onclick="toggleMode()">🌙</button>
+
+  <section class="hero">
+    <div class="hero-content" data-aos="zoom-in">
+      <h2>Be Aware. Be Prepared.</h2>
+      <p>Learn how to prevent and respond to snakebites effectively.</p>
+      <button class="btn" onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'})">Join Now</button>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-right">
+    <h2>Why Snakebite Awareness?</h2>
+    <p>Snakebites are a major public health issue, especially in rural areas. Our program provides life-saving knowledge and tools to reduce deaths and disabilities caused by venomous snakes.</p>
+  </section>
+
+  
+  <section id="common-snakes" data-aos="fade-up">
+    <h2>Common Venomous Snakes</h2>
+    <p>Here are some of the most dangerous snakes that pose a threat to humans:</p>
+    <ul>
+      <li><strong>Cobra:</strong> Known for its hood, cobras can inject a potent neurotoxin, leading to paralysis or death if untreated.</li>
+      <li><strong>Viper:</strong> The Russell's viper and other vipers deliver venom that causes severe tissue damage and blood clotting.</li>
+      <li><strong>Krait:</strong> A small but highly venomous snake. Its bite can lead to respiratory failure.</li>
+      <li><strong>Black Mamba:</strong> One of the fastest snakes, its venom can kill in under 30 minutes if not treated.</li>
+      <li><strong>Coral Snake:</strong> Known for its distinctive color pattern, the venom attacks the nervous system, causing paralysis.</li>
+    </ul>
+  </section>
+
+  <section id="prevention" data-aos="fade-left">
+    <h2>Prevention Tips</h2>
+    <ul>
+      <li>Wear boots and long pants in grassy or forested areas.</li>
+      <li>Never stick hands into holes, logs, or rock crevices.</li>
+      <li>Use a flashlight when walking at night.</li>
+      <li>Keep living areas and storage sheds clean to deter snakes.</li>
+    </ul>
+  </section>
+
+  <section id="symptoms" data-aos="flip-up">
+    <h2>Snakebite Symptoms & First Aid</h2>
+    <ul>
+      <li><strong>Symptoms:</strong> Swelling, pain, nausea, blurred vision, or difficulty breathing.</li>
+      <li><strong>First Aid:</strong> Stay calm, restrict movement, remove tight items, rush to hospital. <strong>Do not cut or suck the wound.</strong></li>
+      <li><strong>Antivenom:</strong> Only administered by medical professionals.</li>
+    </ul>
+  </section>
+
+  <section id="gallery" data-aos="fade-up">
+    <h2>Meet the Snakes</h2>
+    <div class="gallery">
+      <img src="https://cdn.britannica.com/33/238533-050-2E2D04F4/Indian-cobra-naja-naja-venonmous-snake-reptile-hood.jpg" alt="Cobra" />
+      <img src="https://cdn.pixabay.com/photo/2023/10/29/12/21/snake-8349951_640.jpg" alt="Viper" />
+      <img src="https://res.cloudinary.com/roundglass/image/upload/v1588244326/roundglass/sustain/Common-krait_Gerry-Martin5-copy_zm4ta6.jpg" alt="Krait" />
+      <img src="https://rahulalvares.com/wp-content/uploads/2013/02/IMG_3808-2.jpg" alt="Saw-scaled Viper" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Dendroaspis_polylepis_%2814%29.jpg/1200px-Dendroaspis_polylepis_%2814%29.jpg" alt="Black Mamba" />
+      <img src="https://media.istockphoto.com/id/453250621/photo/coral-snake.jpg?s=612x612&w=0&k=20&c=CvvyWdjWlwfXHoPO7e8-ORJvtDmY5IIV_2mOqXq22eQ=" alt="Coral Snake" />
+    </div>
+  </section>
+
+  
+
+
+  
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <input type="password" placeholder="Password" required/>
+      <input type="submit" value="Sign Up" class="btn"/>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Snakebite Awareness Program. All Rights Reserved.</p>
+  </footer>
+
+  
+  
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</html>

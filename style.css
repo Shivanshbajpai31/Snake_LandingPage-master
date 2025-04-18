@@ -1,0 +1,234 @@
+:root {
+    --bg-color: #f8f8f8;
+    --text-color: #333;
+    --header-bg: #003300;
+    --nav-bg: #004d00;
+    --btn-bg: #ffd700;
+    --footer-bg: #002200;
+  }
+
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --header-bg: #1a1a1a;
+    --nav-bg: #2a2a2a;
+    --btn-bg: #ffaa00;
+    --footer-bg: #1a1a1a;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.4s ease;
+  }
+
+  header {
+    background: var(--header-bg);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    animation: fadeIn 2s ease;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  nav {
+    background: var(--nav-bg);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffd700;
+  }
+
+  .hero {
+    background: url('https://i.ytimg.com/vi/qOlrBpAFXxs/maxresdefault.jpg') no-repeat center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+    animation: zoomIn 1s ease;
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .btn {
+    background: var(--btn-bg);
+    color: black;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background: #e0c000;
+  }
+
+  section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  section p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  .gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .gallery img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+  }
+
+  form input, form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  footer {
+    background: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    animation: fadeInUp 1.2s ease;
+  }
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: var(--btn-bg);
+    color: black;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 999;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .floating-btn:hover {
+    transform: scale(1.1);
+    background: #e0c000;
+  }
+
+  
+  .nav-buttons {
+    margin-top: 1rem;
+  }
+
+  .nav-buttons a {
+    padding: 0.8rem 2rem;
+    background: #ffd700;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin: 0 10px;
+  }
+
+  .nav-buttons a:hover {
+    background: #e0c000;
+  }
+
+  @media (max-width: 600px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+    }
+  }
